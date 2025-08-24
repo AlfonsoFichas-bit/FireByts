@@ -21,7 +21,7 @@ const _StackCard = ({ icon, title, tech }: StackCardProps) => (
 const Stack = () => {
     return (
         <section id="stack" class="py-24 text-center">
-            <h2 class="text-3xl font-bold">"// Nuestro Stack"</h2>
+            <h2 class="text-3xl font-bold">// Nuestro Stack</h2>
             <p class="mt-4 max-w-2xl mx-auto text-medium-text">
                 Utilizamos un conjunto de tecnologías modernas y robustas para dar vida a nuestras ideas.
             </p>
