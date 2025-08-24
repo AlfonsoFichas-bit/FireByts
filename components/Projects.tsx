@@ -9,7 +9,7 @@ const TechPill = ({ children }: PropsWithChildren) => (
 const Projects = () => {
   return (
     <section id="proyectos" class="py-24">
-      <h2 class="text-3xl font-bold mb-12">"// Proyectos Destacados"</h2>
+      <h2 class="text-3xl font-bold mb-12">// Proyectos Destacados</h2>
 
       <div class="space-y-20">
         {/* Project 1 */}
