@@ -1,3 +1,15 @@
+---
+layout: blog_post.tsx
+title: README
+date: 2025-08-24
+tags:
+  - Test
+  - Instalación
+  - Deno
+categories:
+  - Web Development
+type: post
+---
 # FireByts Website
 
 Este es el repositorio para el sitio web de FireByts. El sitio está construido con Lume, un generador de sitios estáticos para Deno.

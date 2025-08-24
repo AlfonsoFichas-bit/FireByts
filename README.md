@@ -5,7 +5,6 @@ Este es el repositorio para el sitio web de FireByts. El sitio está construido 
 ## Tecnologías Utilizadas
 
 *   **Deno:** Entorno de ejecución para JavaScript y TypeScript.
-*   **Lume:** Generador de sitios estáticos para Deno.
 *   **TypeScript/JSX:** Lenguaje de programación y sintaxis de plantillas.
 *   **Markdown:** Para escribir contenido de páginas y posts.
 *   **Tailwind CSS:** Framework de CSS para el diseño.

@@ -7,7 +7,7 @@ In [the previous step](https://lume.land/docs/getting-started/reuse-layouts/) we
 In your project directory, create a `_data.yml` file with the following content:
 
 ```
-layout: layout.vto
+
 
 ```
 
@@ -15,7 +15,7 @@ layout: layout.vto
 This is a special file containing data accessible by all pages in the same directory or subdirectory. In this file we have defined the variable `layout` so all pages have this variable too. There's no need to repeat it in the front matter of all pages, so we can remove it there.
 
 ```
-layout: layout.vto
+
 
 ```
 

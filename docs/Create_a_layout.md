@@ -41,7 +41,7 @@ Now let's configure the `index.md` page to use our new layout. We have to create
 
 ```
 ---
-layout: layout.vto
+
 ---
 # Welcome to my website
 

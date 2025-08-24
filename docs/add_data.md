@@ -3,7 +3,7 @@ The front matter can contain any variable that you want. For example, let's defi
 
 ```
 ---
-layout: layout.vto
+
 title: This is my website
 ---
 # Welcome to my website

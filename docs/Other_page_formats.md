@@ -9,7 +9,7 @@ Vento, the format we have used to create layouts in the previous examples, can a
 ```
 ---
 title: Welcome to my page
-layout: layout.vto
+
 links:
   - text: My Twitter
     url: https://twitter.com/misteroom

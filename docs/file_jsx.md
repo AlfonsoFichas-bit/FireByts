@@ -88,7 +88,7 @@ To create a page with this format, just add a file with `.page.jsx` or `.page.ts
 
 ```
 export const title = "Welcome to my page";
-export const layout = "layouts/main.vto";
+
 
 export default (data: Lume.Data, helpers: Lume.Helpers) => (
   <>
