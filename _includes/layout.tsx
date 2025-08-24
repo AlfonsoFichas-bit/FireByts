@@ -5,7 +5,7 @@ export default ({ title, children }: Lume.Data, helpers: Lume.Helpers) => (
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || "My Lume Site"}</title>
+        <title>{title || "FireByts"}</title>
         <link rel="stylesheet" href="/style.css" />
       </head>
       <body class="bg-dark-bg text-light-text font-mono"> {/* Added body classes */}
