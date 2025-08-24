@@ -1,0 +1,50 @@
+# Ignore files - Lume
+Lume loads all files with a specific extension like `.md`, `.vto`, `.page.{js,ts,json}`, etc, except files and directories starting with `.` or `_` which are automatically ignored. Use the `ignore()` method to ignore other files and folders in your `src` folder:
+
+```
+site.ignore("README.md", "CHANGELOG.md", "node_modules");
+
+```
+
+
+Tip
+
+One quick way to make Lume ignore a file or folder is by prepending `_` to the name. For example, renaming the folder `./projects` to `./_projects`.
+
+[Paths ignored by default](#paths-ignored-by-default)
+-----------------------------------------------------
+
+The following paths are **always ignored**, so you don't need to configure them:
+
+*   `node_modules`
+*   `import_map.json`
+*   `deno.json` / `deno.jsonc`
+
+[Ignore function](#ignore-function)
+-----------------------------------
+
+You can use functions for more advanced filtering. Example:
+
+```
+// Ignore all files with ".md" extension inside the "draft" folder
+site.ignore((path) => {
+  return path.match(/^\/draft\/.*\.md$/) !== null;
+});
+
+```
+
+
+[Draft files](#draft-files)
+---------------------------
+
+Pages with the `draft` value set to `true` are ignored by Lume unless the environment variable `LUME_DRAFTS` is set to `true`.
+
+[Adding ignored files](#adding-ignored-files)
+---------------------------------------------
+
+If you have a file or folder starting with `_` but don't want to ignore it, use the [`site.add()`](https://lume.land/docs/configuration/add-files/) function.
+
+```
+site.add("/_posts"); // The _posts folder is not ignored
+
+```

@@ -1,0 +1,76 @@
+@import "https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.css";
+
+/* Tailwind entry */
+@import "tailwindcss";
+
+/* Tailwind v4: define aqui los tokens de diseño para que funcionen clases de utilidad como
+   bg-dark-bg, text-light-text, border-border-color, font-mono, etc. */
+@theme {
+  /* Colors */
+  --color-dark-bg: #0D1117;
+  --color-light-text: #C9D1D9;
+  --color-medium-text: #8B949E;
+  --color-accent-blue: #58A6FF;
+  --color-accent-green: #3FB950;
+  --color-accent-pink: #DB61A2;
+  --color-border-color: #30363D;
+
+  /* Fonts */
+  --font-mono: "Victor Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --------- Estilos de tipografía para Markdown --------- */
+.prose {
+  --tw-prose-body: var(--color-light-text);
+  --tw-prose-headings: #fff;
+  --tw-prose-links: var(--color-accent-blue);
+  --tw-prose-code: var(--color-accent-green);
+}
+
+/* Titulares con mejor jerarquía */
+.prose h1 { @apply text-4xl font-bold mt-6 mb-4; }
+.prose h2 { @apply text-2xl font-bold mt-8 mb-3 border-l-4 pl-4; border-color: var(--color-accent-blue); }
+.prose h3 { @apply text-xl font-semibold mt-6 mb-2; color: var(--color-light-text); }
+.prose h4 { @apply text-lg font-semibold mt-4 mb-2; color: var(--color-light-text); }
+
+/* Párrafos y listas */
+.prose p { @apply leading-7 my-4; color: var(--color-light-text); }
+.prose ul { @apply list-disc pl-6 my-4; }
+.prose ol { @apply list-decimal pl-6 my-4; }
+.prose li { @apply my-1; }
+
+/* Citas */
+.prose blockquote { @apply border-l-4 pl-4 italic my-4; border-color: var(--color-border-color); color: var(--color-medium-text); }
+
+/* Imágenes */
+.prose img { @apply rounded-lg border; border-color: var(--color-border-color); }
+
+/* Tablas */
+.prose table { @apply w-full text-left border-collapse my-6; }
+.prose th, .prose td { @apply border px-3 py-2; border-color: var(--color-border-color); }
+.prose thead th { @apply bg-[color:var(--color-border-color)]; }
+
+/* Código inline y bloques */
+.prose code { @apply text-sm px-1 py-0.5 rounded; background: rgba(99, 110, 123, 0.25); }
+.prose pre { @apply relative rounded-lg border overflow-auto my-6; border-color: var(--color-border-color); }
+.prose pre code { @apply block p-4; }
+
+/* Botón copiar y badge de lenguaje */
+.code-copy-btn { @apply absolute top-2 right-2 bg-gray-700 text-white px-2 py-1 rounded text-xs opacity-80 hover:opacity-100 transition-opacity; }
+.code-lang-badge { @apply absolute top-2 left-3 text-[10px] tracking-wider px-2 py-0.5 rounded bg-gray-700/60 text-white; }
+
+/* Enlaces */
+.prose a { @apply underline decoration-dotted underline-offset-4 hover:text-[color:var(--color-accent-blue)]; }
+
+/* HR */
+.prose hr { @apply my-8 border-t; border-color: var(--color-border-color); }
+
+/* --------- TOC --------- */
+#toc { @apply border-l pl-4; border-color: var(--color-border-color); }
+#toc h3 { @apply text-sm uppercase tracking-wider text-[color:var(--color-medium-text)] mb-2; }
+#toc a { @apply text-[color:var(--color-medium-text)] hover:text-white transition-colors; }
+#toc a.active { color: white; }
