@@ -13,7 +13,7 @@ const Contact = () => {
           href="mailto:hola@firebytes.com"
           class="mt-8 inline-block text-2xl text-accent-blue font-bold hover:underline"
         >
-          hola@firebytes.com
+          firebyts@hotmail.com
         </a>
         <div class="flex justify-center space-x-6 mt-8">
           <a href="#" class="text-medium-text hover:text-light-text transition-colors"><GithubIcon /></a>
