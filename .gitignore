@@ -3,3 +3,4 @@ _cache
 .idea/
 .zencoder/
 .vscode
+.idx/
